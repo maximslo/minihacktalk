@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter Example</title>
+    </head>
+    <body>
+
+        <h1>Counter:</h1>
+        <h2 id="counterDisplay">0</h2>
+
+        <button id="incrementButton">+1</button>
+        <button id="decrementButton">-1</button>
+        <button id="resetButton">Reset</button>
+
+        <script>
+            // JavaScript code goes here
+            let counter = 0; // Initial counter value
+            const counterDisplay = document.getElementById("counterDisplay");
+
+            // Function to update the counter display
+            function updateCounter() {
+                counterDisplay.textContent = counter;
+
+                if (counter === 10) {
+                    counterDisplay.style.color = "green";
+                    window.alert("Goal reached!"); // Display a pop-up message
+                } else {
+                    counterDisplay.style.color = "black"; // Reset text color to black
+                }
+            }
+
+            // Event listener for the increment button
+            document.getElementById("incrementButton").addEventListener("click", function() {
+                counter++;
+                document.getElementById()
+                // updateCounter();
+            });
+
+            // Event listener for the decrement button
+            document.getElementById("decrementButton").addEventListener("click", function() {
+                counter--;
+                updateCounter();
+            });
+
+            // Event listener for the reset button
+            document.getElementById("resetButton").addEventListener("click", function() {
+                counter = 0;
+                updateCounter();
+            });
+
+            // Initial update of the counter display
+            updateCounter();
+        </script>
+    </body>
+</html>

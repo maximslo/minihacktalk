@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 10%;
+}
+
+#pokemonName {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+img {
+    max-width:100px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 18px;
+}
+
+p.error {
+    color: red;
+}
+
